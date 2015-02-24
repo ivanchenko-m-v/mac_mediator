@@ -1,0 +1,12 @@
+build
+build/* 
+data
+data/*
+docs/*
+*.sqlite
+*.sqlite*
+*.pro.user
+*.pro.user*
+.directory
+*/.directory
+win32/*

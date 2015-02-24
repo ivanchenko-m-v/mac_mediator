@@ -1,0 +1,1 @@
+update t_request set i_request=((i_request/16777216)*16777216)+(13*65536)+(i_request %16777216);

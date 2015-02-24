@@ -1,0 +1,3 @@
+SELECT t_mediator.x_mediator, t_mediator_login.x_login, t_administrative_division.x_abbr 
+FROM t_mediator, t_mediator_login, t_mediator_ad, t_administrative_division
+WHERE (t_mediator.i_mediator=t_mediator_login.i_mediator)AND(t_mediator.i_mediator=t_mediator_ad.i_mediator)AND(t_mediator_ad.i_administrative_division=t_administrative_division.i_administrative_division);

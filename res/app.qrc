@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/text">
+        <file>text/version.txt</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file>images/32x32/edit-find.png</file>
+        <file>images/32x32/edit-clear.png</file>
+        <file>images/app_icon.png</file>
+        <file>images/32x32/document-print.png</file>
+        <file>images/32x32/id-request-edit.png</file>
+        <file>images/32x32/document-new.png</file>
+        <file>images/32x32/document-close.png</file>
+        <file>images/32x32/document-edit.png</file>
+        <file>images/3_points.png</file>
+        <file>images/32x32/office-chart-pie.png</file>
+    </qresource>
+</RCC>
