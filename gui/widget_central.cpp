@@ -2,9 +2,10 @@
 /// ============================================================================
 ///		Author		: M. Ivanchenko
 ///		Date create	: 18-09-2013
-///		Date update	: 12-11-2013
+///		Date update	: 27-02-2015
 ///		Comment		:
 /// ============================================================================
+#include <QAction>
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -285,7 +286,7 @@ namespace mac_mediator
         //_btn_stat
         this->_btn_stat = new QToolButton;
         this->_btn_stat->setIcon(
-                        *( new QIcon( ":/image/images/32x32/office-chart-pie.png" ) )
+                            QIcon( ":/image/images/32x32/office-chart-pie.png" )
                                  );
         this->_btn_stat->setToolTip( QObject::tr( "statistics" ) );
         this->_btn_stat->setPopupMode( QToolButton::MenuButtonPopup );
@@ -304,8 +305,15 @@ namespace mac_mediator
     void widget_central::init_stat_menu( )
     {
         this->_mnu_stat = new QMenu( );
+        //_act_report
         this->_act_report = this->_mnu_stat->addAction( tr("Report") );
+        //_act_diagram
         this->_act_diagram = this->_mnu_stat->addAction( tr("Diagaram") );
+        //_act_list_to_excel
+        this->_act_list_to_excel = this->_mnu_stat->addAction(
+                            QIcon( ":/image/images/16x16/libreoffice-calc.png" ),
+                            tr("List to Excel")
+                                                             );
     }
 
     /// ========================================================================

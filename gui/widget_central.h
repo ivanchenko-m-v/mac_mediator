@@ -2,7 +2,7 @@
 /// ============================================================================
 ///		Author		: M. Ivanchenko
 ///		Date create	: 18-09-2013
-///		Date update	: 12-11-2013
+///		Date update	: 27-02-2015
 ///		Comment		:
 /// ============================================================================
 #ifndef __WIDGET_CENTRAL_H__
@@ -112,6 +112,7 @@ class listview_request;
         QMenu               *_mnu_stat;
         QAction             *_act_report;
         QAction             *_act_diagram;
+        QAction             *_act_list_to_excel;
 
 	};//class widget_central
 /// ############################################################################
